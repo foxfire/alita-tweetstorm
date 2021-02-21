@@ -7,8 +7,7 @@ const dbParams = require('./../services/databaseConnector');
 let collection;
 
 moment.locale('de');
-//let time = moment('21/02/2021 14:18:00', "DD/MM/YYYY hh:mm:ss").format();
-let time = moment().add(5, "seconds").format();
+let time = moment('21/02/2021 14:18:00', "DD/MM/YYYY hh:mm:ss").format();
 
 (async function () {
     // Use connect method to connect to the server
