@@ -84,7 +84,7 @@ function validateEmail(email) {
     return re.test(String(email).toLowerCase());
 }
 
-app.listen(port, () => {
+app.listen(port,"0.0.0.0", () => {
     console.log(`Server listening at the port::${port}`);
 });
 
