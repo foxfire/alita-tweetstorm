@@ -8,6 +8,7 @@ body {
   background: url("../alita.png");
   background-size: cover;
   background-position: right top;
+  background-attachment: fixed;
   color: white;
 }
 
@@ -111,15 +112,23 @@ h2 {
   margin-left: 7.5px;
 }
 
-@media (min-width: 950px) {
-  .container, .container-sm, .container-md, .container-lg {
-      max-width: 960px;
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: calc(100% - 20px);
+  }
+
+  .col-md-3 {
+    flex: none;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 950px) {
+  .container, .container-sm, .container-md, .container-lg {
+      max-width: 960px;
+  }
   .col-md-3 {
-      flex: 0 0 25%;
-      max-width: 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }
