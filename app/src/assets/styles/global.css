@@ -4,11 +4,6 @@
 }
 
 body {
-  height: 100vh;
-  background: url("../alita.png");
-  background-size: cover;
-  background-position: right top;
-  background-attachment: fixed;
   color: white;
 }
 
@@ -112,6 +107,13 @@ h2 {
   margin-left: 7.5px;
 }
 
+body {
+  background: #606060 url(../alita.png) right top;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
     max-width: calc(100% - 20px);
@@ -130,5 +132,23 @@ h2 {
   .col-md-3 {
     flex: 0 0 25%;
     max-width: 25%;
+  }
+}
+
+@media (max-width:1024px){
+  body {
+    background-position-x: calc(100% + 220px);
+  }
+}
+
+
+
+@media (max-width:480px){
+  html { 
+    background: url(../alita.png) no-repeat right top fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
