@@ -108,10 +108,9 @@ h2 {
 }
 
 body {
-  background: #606060 url(../alita.png) right top;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
+  background: black url(../alita.png) right top;
+  background-size: auto 100vH;
+  background-repeat: no-repeat;
   will-change: transform;
 }
 
@@ -138,18 +137,8 @@ body {
 
 @media (max-width: 1024px) and (min-height: 600px) {
   body {
-    background-position-x: calc(100% + 220px);
-  }
-}
-
-
-
-@media (max-width:480px){
-  html { 
-    background: url(../alita.png) no-repeat right top fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: #606060 url(../alita3.png) center top;
     background-size: cover;
+    height: 100vH;
   }
 }
