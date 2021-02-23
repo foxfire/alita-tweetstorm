@@ -112,6 +112,7 @@ body {
   -webkit-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
+  will-change: transform;
 }
 
 @media (min-width: 768px) {
@@ -135,7 +136,7 @@ body {
   }
 }
 
-@media (max-width:1024px){
+@media (max-width: 1024px) and (min-height: 600px) {
   body {
     background-position-x: calc(100% + 220px);
   }
